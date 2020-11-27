@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="rayTrace.controller.Controller">
+    <HBox alignment="center" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Button onAction="#startRayTrace" text="Start" />
+    </HBox>
+    <ImageView fx:id="renderedImage" fitHeight="600" fitWidth="800">
+        <Image url="@resources/Placeholder-01.png" />
+    </ImageView>
+    <Accordion>
+        <panes>
+            <TitledPane animated="false" text="untitled 1">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                </content>
+            </TitledPane>
+            <TitledPane animated="false" text="untitled 2">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                </content>
+            </TitledPane>
+            <TitledPane animated="false" text="untitled 3">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                </content>
+            </TitledPane>
+        </panes>
+    </Accordion>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+    <VBox prefHeight="200.0" prefWidth="100.0" />
+    <VBox prefHeight="200.0" prefWidth="100.0" />
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
